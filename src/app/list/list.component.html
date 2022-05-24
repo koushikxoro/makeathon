@@ -1,0 +1,7 @@
+
+<div class="bg-info m-4 p-4" style="min-height: 300px; width: 80%;">
+    <div class="form-group" *ngFor="let field of fields; let i=index;">
+        <div class="lable">Columns {{i+1}}</div>
+        <div class="form-control"><input type="text" [(ngModel)]="fields[i]" [disabled]="editAllowed"> </div>
+    </div>
+</div>
